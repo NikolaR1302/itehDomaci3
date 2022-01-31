@@ -1,17 +1,22 @@
 import React from 'react';
 import {AiOutlineCar} from "react-icons/ai";
-import img1 from './images/bmw.jpg';
+import Button from './Button';
 
-function Car() {
+
+function Car({car, dodajAuto}) {
+
+  
+
   return (
   <div className='card'>
-    <img className = "card-img" src={img1} alt="Neka slika"></img>
+    <img className = "card-img" src={car.slika} alt="Neka slika"></img>
     <div className="card-body">
-      <h3 className="card-title">Audi A6</h3>
-      <p className="card-text">6900$</p>
+      <h3 className="card-title">{car.naziv}</h3>
+      <p className="card-text">{car.cena}</p>
     </div>
     <div className='btn2'>
-      <button className="btn">Dodaj auto</button>
+      
+      <Button className="btn" text="Dodaj auto" onClick={()=>dodajAuto(car.naziv)}></Button>
       </div>
     
   </div>

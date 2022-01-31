@@ -1,24 +1,17 @@
 import React from 'react';
 import Car from "./Car";
 
-const AllCars = () => {
+
+const AllCars = ({cars,dodajAuto}) => {
+
+
+
   return <div className='all-products'>
     
-      <Car />
-      <Car />
-      <Car />
-      <Car />
+      {cars.map((c)=>(
+         <Car car={c} key={c.id} dodajAuto={dodajAuto}/>
+      ))}
       
-      <Car />
-      <Car />
-      <Car />
-      <Car />
-      <Car />
-      <Car />
-      <Car />
-      <Car />
-      <Car />
-      <Car />
       </div>
 }
   

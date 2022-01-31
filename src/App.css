@@ -52,7 +52,7 @@
 
 .card:hover {
   transform: scale(1.15);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
 }
 
 .card {
@@ -98,7 +98,7 @@
   border-radius: 3px;
   border-width: 0px;
   align-items: center;
-  transition: 0.5s;
+  transition: 1.5s;
 }
 
 a {
@@ -111,7 +111,7 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
   background-color: khaki;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .cart-container {
