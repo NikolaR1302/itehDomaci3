@@ -9,7 +9,7 @@ const AllCars = ({cars,dodajAuto}) => {
   return <div className='all-products'>
     
       {cars.map((c)=>(
-         <Car car={c} key={c.id} dodajAuto={dodajAuto}/>
+         <Car car={c} key={c.id} dodajAuto={dodajAuto} inFavorites={0}/>
       ))}
       
       </div>

@@ -1,13 +1,14 @@
 import React from 'react';
 import {AiOutlineCar,AiFillCar} from "react-icons/ai";
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 
 function Navbar() {
   return <div className = "navBar">
-    <a>
+    <Link to="/">
     Svi automobili
-    </a>
+    </Link>
     <hr></hr>
-    <a>Moji automobili</a>
+    <Link to="/favorites">Moji automobili</Link>
 
   </div>;
 }
